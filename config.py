@@ -19,7 +19,7 @@ class Config(object):
     SUPPORT_CHAT = getenv("SUPPORT_CHAT", "no_rolling")
     LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001712227681"))
     MONGO_URI = getenv("MONGO_DB_URI")
-    REDIS_URL = "redis://Akash:Akash@123@redis-12548.c281.us-east-1-2.ec2.cloud.redislabs.com:12548"
+    REDIS_URL = "redis://default:SeeHVAqRRbzHNEQ1gFac5rZIui5whbpQ@redis-17680.c289.us-west-1-2.ec2.cloud.redislabs.com:17680"
     DATABASE_URL = getenv("DATABASE_URL")
 
     # ɴᴏ ᴇᴅɪᴛ ᴢᴏɴᴇ
