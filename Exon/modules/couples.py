@@ -2,7 +2,7 @@ import random
 
 from telethon import Button
 
-from Exon import Asuinline, register
+from Exon import Abhisnoi, register
 from Exon.modules.sql.mongo.couples_db import (
     add_vote_down,
     add_vote_up,
