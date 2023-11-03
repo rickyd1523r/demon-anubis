@@ -8,7 +8,7 @@ from telethon import __version__ as s
 
 from Exon import Abishnoi as pbot
 
-ABISHNOIX = "https://te.legra.ph/file/abfc49a1cc4b5629dc8cd.jpg"
+ABISHNOIX = "https://telegra.ph/file/31b7cddcb3c67fcae447f.jpg"
 
 
 @pbot.on_message(filters.command("repo"))
@@ -17,7 +17,8 @@ async def repo(_, message):
         photo=ABISHNOIX,
         caption=f"""✨ **ʜᴇʏ {message.from_user.mention},**
 
-**ᴏᴡɴᴇʀ  : [ᴊᴇᴏʟ](https://t.me/jeol_tg)**
+**ᴏᴡɴᴇʀ  : [ᴀᴋᴀsʜ](https://t.me/OP7AKASH)**
+**ᴅᴇᴠ    : [ᴋᴀᴋᴀsʜɪ](https://t.me/yeahoffline)**
 **ᴘʏᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ :** `{y()}`
 **ʟɪʙʀᴀʀʏ ᴠᴇʀꜱɪᴏɴ :** `{o}`
 **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ :** `{s}`
