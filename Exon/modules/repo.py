@@ -29,7 +29,7 @@ async def repo(_, message):
             [
                 [
                     InlineKeyboardButton(
-                        "•Repo•", url="https://github.com/Itz-JEOL/ROCKY"
+                        "•Repo•", url="https://youtube.com/shorts/SXHMnicI6Pg?si=-DmTZyJuQyZrCBoX"
                     ),
                 ]
             ]
