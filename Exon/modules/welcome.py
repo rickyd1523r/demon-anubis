@@ -235,7 +235,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Welcome Devs
             elif new_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "ᴡʜᴏᴀ! ᴛʜᴇ ᴅᴇꜱᴛʀᴏʏᴇʀꜱ ᴊᴜꜱᴛ ᴀʀʀɪᴠᴇᴅ!",
+                    "ᴡᴏᴀʜ! ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ ᴊᴜsᴛ ᴀʀʀɪᴠᴇᴅ!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -266,7 +266,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Welcome yourself
             elif new_mem.id == bot.id:
                 update.effective_message.reply_text(
-                    "ᴛʜᴀɴᴋꜱ ꜰᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ! ᴊᴏɪɴ @AbishnoiMF ꜰᴏʀ ꜱᴜᴘᴘᴏʀᴛ.",
+                    "ᴛʜᴀɴᴋꜱ ꜰᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ! ᴊᴏɪɴ @YonkoXHQ ꜰᴏʀ ꜱᴜᴘᴘᴏʀᴛ.",
                     reply_to_message_id=reply,
                 )
                 continue
