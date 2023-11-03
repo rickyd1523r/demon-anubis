@@ -62,6 +62,11 @@
          "required": true,
          "value": "-100"
       },
+      "ALIVE_MEDIA": {
+         "description": "Paste link of your media(img, video or gif) that you want to show in /alive. Otherwise put None.",
+         "required": false,
+         "value": "https://telegra.ph/file/2b04f7812f22b983f8a10.mp4"
+      },
       "DATABASE_URL": {
          "description": "ʀᴇǫᴜɪʀᴇᴅ ғᴏʀ ᴅᴀᴛᴀʙᴀsᴇ ᴄᴏɴɴᴇᴄᴛɪᴏɴs (sǫʟ :- elephantsql.com).",
          "required": false,
