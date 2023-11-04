@@ -518,7 +518,7 @@ def stats(update, context):
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
             + "\n\n[⍙ ɢɪᴛʜᴜʙ](https://youtube.com/shorts/SXHMnicI6Pg?si=NwcbyLrtcDCt_kfT) | ⍚\n\n "
-            + "╘══「 by [ᴏᴡɴᴇʀ](github.com/OP7AKASH) 
+            + "╘══「 by [ᴏᴡɴᴇʀ](github.com/OP7AKASH) \n"
             + "╘══「 by [ᴅᴇᴠ](github.com/YeahOffline) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(kb),
@@ -534,7 +534,7 @@ def stats(update, context):
                     )
                     + "\n\n⍙ [ɢɪᴛʜᴜʙ](https://youtube.com/shorts/SXHMnicI6Pg?si=NwcbyLrtcDCt_kfT) | ⍚ \n\n"
                 )
-                + "╘══「 by [ᴏᴡɴᴇʀ](github.com/OP7AKASH) 
+                + "╘══「 by [ᴏᴡɴᴇʀ](github.com/OP7AKASH) \n"
                 + "╘══「 by [ᴅᴇᴠ](github.com/YeahOffline) 」\n",
             ),
             parse_mode=ParseMode.MARKDOWN,
