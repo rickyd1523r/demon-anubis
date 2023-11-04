@@ -1,5 +1,5 @@
-from Shikimori.imports.hmfull.src import fetchAPI
-from Shikimori.imports.hmfull.src import hmtai
+from Exon.imports.hmfull.src import fetchAPI
+from Exon.imports.hmfull.src import hmtai
 
 hmlinks = fetchAPI.HMrequest
 
