@@ -442,7 +442,7 @@ Following are the NSFW commands:
 
 
 
-@pbot.on_message(filters.command('nsfw'))
+@Abishnoi.on_message(filters.command('nsfw'))
 
 async def ass(_, message):
 
