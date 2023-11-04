@@ -58,3 +58,4 @@ gpytranslate==1.5.1
 cloudscraper==1.2.68
 carbonnow
 pretty_errors
+nekos.py
