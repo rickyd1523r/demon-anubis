@@ -76,7 +76,7 @@ import nekos
 
 from Exon.imports.hmfull.src import hmfull
 
-from Exon import SUPPORT_CHAT, dispatcher, pbot
+from Exon import SUPPORT_CHAT, dispatcher, Abishnoi
 
 import Exon.modules.sql.nsfw_sql as sql
 
