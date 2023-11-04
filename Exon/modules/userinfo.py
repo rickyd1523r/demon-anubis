@@ -518,8 +518,8 @@ def stats(update, context):
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
             + "\n\n[⍙ ɢɪᴛʜᴜʙ](https://youtube.com/shorts/SXHMnicI6Pg?si=NwcbyLrtcDCt_kfT) | ⍚\n\n "
-            + "╘══「 by [ᴏᴡɴᴇʀ](github.com/OP7AKASH) \n"
-            + "╘══「 by [ᴅᴇᴠ](github.com/YeahOffline) 」\n",
+            + "╘══「 by [ᴏᴡɴᴇʀ](t.me/OP7AKASH) \n"
+            + "╘══「 by [ᴅᴇᴠ](t.me/YeahOffline) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(kb),
             disable_web_page_preview=True,
@@ -534,8 +534,8 @@ def stats(update, context):
                     )
                     + "\n\n⍙ [ɢɪᴛʜᴜʙ](https://youtube.com/shorts/SXHMnicI6Pg?si=NwcbyLrtcDCt_kfT) | ⍚ \n\n"
                 )
-                + "╘══「 by [ᴏᴡɴᴇʀ](github.com/OP7AKASH) \n"
-                + "╘══「 by [ᴅᴇᴠ](github.com/YeahOffline) 」\n",
+                + "╘══「 by [ᴏᴡɴᴇʀ](t.me/OP7AKASH) \n"
+                + "╘══「 by [ᴅᴇᴠ](t.me/YeahOffline) 」\n",
             ),
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(kb),
