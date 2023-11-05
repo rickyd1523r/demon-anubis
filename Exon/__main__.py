@@ -22,7 +22,7 @@ from telethon import __version__ as tver
 import Exon.modules.no_sql.users_db as sql
 from Exon import BOT_USERNAME, CERT_PATH
 from Exon import LOGGER as log
-from Exon import OWNER_ID, OWNER_USERNAME, PORT, ALIVE_MEDIA, SUPPORT_CHAT, TOKEN, URL, WEBHOOK
+from Exon import OWNER_ID, OWNER_USERNAME, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK
 from Exon import Abishnoi as pbot
 from Exon import StartTime, dispatcher, telethn, updater
 
@@ -703,51 +703,7 @@ def migrate_chats(update: Update, context: CallbackContext):
 
     log.info("sᴜᴄᴄᴇssғᴜʟʟʏ ᴍɪɢʀᴀᴛᴇᴅ!")
     raise DispatcherHandlerStop
-
-ALIVE_ID = ALIVE_MEDIA.split(".")
-alive_id = ALIVE_ID[-1]
-
-def main():
-    if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
-        try:
-            if alive_id in ("jpeg", "jpg", "png"):
-                msg = dispatcher.bot.send_photo(
-                f"@{SUPPORT_CHAT}",
-                photo=ALIVE_MEDIA,
-                caption="👋 Hi, i'm alive.",
-                parse_mode=ParseMode.MARKDOWN
-                )
-            elif alive_id in ("mp4", "mkv"):
-                msg = dispatcher.bot.send_video(
-                f"@{SUPPORT_CHAT}",
-                ALIVE_MEDIA,
-                caption="👋 Hi, i'm alive.",
-                parse_mode=ParseMode.MARKDOWN
-                )
-            elif alive_id in ("gif", "webp"):
-                msg = dispatcher.bot.send_animation(
-                f"@{SUPPORT_CHAT}",
-                ALIVE_MEDIA,
-                caption="👋 Hi, i'm alive.",
-                parse_mode=ParseMode.MARKDOWN
-                )
-            else:
-                msg = dispatcher.bot.send_text(
-                f"@{SUPPORT_CHAT}",
-                "👋 Hi, i'm alive.",
-                parse_mode=ParseMode.MARKDOWN
-                )
-            time.sleep(15)
-            try:
-                msg.delete()
-            except BadRequest:
-                pass
-        except Unauthorized:
-            LOGGER.warning(
-                "Bot isnt able to send message to support_chat, go and check!"
-            )
-        except BadRequest as e:
-            LOGGER.warning(e.message)
+.
 
     if WEBHOOK:
         log.info("ᴜsɪɴɢ ᴡᴇʙʜᴏᴏᴋs.")
