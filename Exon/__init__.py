@@ -188,7 +188,7 @@ else:
     except ValueError:
         raise Exception("Your tiger users list does not contain valid integers.")
 
-     LOG_CHANNEL = Config.LOG_CHANNEL
+    LOG_CHANNEL = Config.LOG_CHANNEL
     WEBHOOK = Config.WEBHOOK
     URL = Config.URL
     PORT = Config.PORT
