@@ -241,7 +241,7 @@ except BaseException:
     )
 finally:
     REDIS.ping()
-    LOGGER.info("ᴄᴏɴɴᴇᴄᴛɪᴏɴ ᴛᴏ ᴛʜᴇ ʀᴇᴅɪs ᴅᴀᴛᴀʙᴀsᴇ ᴇsᴛᴀʙʟɪsʜᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ!")
+    LOGGER.info("Your radis server is now alive")
 
 
 if not SPAMWATCH_API:
