@@ -11,7 +11,7 @@ from sqlalchemy import (
     func,
 )
 
-from Exon import exon
+from Exon import dispatcher
 from Exon.modules.sql import BASE, SESSION
 
 
