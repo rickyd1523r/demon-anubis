@@ -143,7 +143,7 @@ if ENV:
 
 
 else:
-    from Shikimori.config import Development as Config
+    from Exon.config import Development as Config
 
     TOKEN = Config.TOKEN
 
