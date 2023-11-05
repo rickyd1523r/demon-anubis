@@ -59,3 +59,4 @@ cloudscraper==1.2.68
 carbonnow
 pretty_errors
 nekos.py
+flask
