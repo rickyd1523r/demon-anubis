@@ -704,6 +704,8 @@ def migrate_chats(update: Update, context: CallbackContext):
     log.info("sᴜᴄᴄᴇssғᴜʟʟʏ ᴍɪɢʀᴀᴛᴇᴅ!")
     raise DispatcherHandlerStop
 
+ALIVE_ID = ALIVE_MEDIA.split(".")
+alive_id = ALIVE_ID[-1]
 
 def main():
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
