@@ -704,6 +704,32 @@ def migrate_chats(update: Update, context: CallbackContext):
     log.info("sᴜᴄᴄᴇssғᴜʟʟʏ ᴍɪɢʀᴀᴛᴇᴅ!")
     raise DispatcherHandlerStop
 
+
+def main():
+    if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
+        try:
+            dispatcher.bot.sendAnimation(
+                f"@{SUPPORT_CHAT}",
+                animation="https://telegra.ph/file/8dea393ddf4fc2e339179.gif",
+                caption=f"""
+ㅤ🥀 {dispatcher.bot.first_name} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ ✨ .....
+
+━━━━━━━━━━━━━
+⍟ ᴍʏ [ᴏᴡɴᴇʀ](https://t.me/{OWNER_USERNAME})
+⍟ **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{lver}`
+⍟ **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{tver}`
+⍟ **ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{pver}`
+⍟ **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{version_info[0]}.{version_info[1]}.{version_info[2]}`
+⍟ **ʙᴏᴛ ᴠᴇʀsɪᴏɴ :** `2.69``
+━━━━━━━━━━━━━
+""",
+                parse_mode=ParseMode.MARKDOWN,
+            )
+        except Unauthorized:
+            log.warning("ʙᴏᴛ ɪsɴᴛ ᴀʙʟᴇ ᴛᴏ sᴇɴᴅ ᴍᴇssᴀɢᴇ ᴛᴏ sᴜᴘᴘᴏʀᴛ_ᴄʜᴀᴛ, ɢᴏ ᴀɴᴅ ᴄʜᴇᴄᴋ !")
+        except BadRequest as e:
+            log.warning(e.message)
+
     if WEBHOOK:
         log.info("ᴜsɪɴɢ ᴡᴇʙʜᴏᴏᴋs.")
         updater.start_webhook(listen="0.0.0.0", port=PORT, url_path=TOKEN)
