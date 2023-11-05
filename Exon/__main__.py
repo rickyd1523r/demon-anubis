@@ -22,7 +22,7 @@ from telethon import __version__ as tver
 import Exon.modules.no_sql.users_db as sql
 from Exon import BOT_USERNAME, CERT_PATH
 from Exon import LOGGER as log
-from Exon import OWNER_ID, OWNER_USERNAME, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK
+from Exon import OWNER_ID, OWNER_USERNAME, PORT, ALIVE_MEDIA, SUPPORT_CHAT, TOKEN, URL, WEBHOOK
 from Exon import Abishnoi as pbot
 from Exon import StartTime, dispatcher, telethn, updater
 
