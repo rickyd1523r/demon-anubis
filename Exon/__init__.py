@@ -370,7 +370,7 @@ if ENV:
 
 else:
 
-    from Exon.config import Development as Config
+    from Config import Development as Config
 
 
 
@@ -577,14 +577,13 @@ except BaseException:
 finally:
 
    REDIS.ping()
-
    LOGGER.info("Your redis server is now alive!")
 
 
 
 
 
-from Shikimori.modules.sql import SESSION
+from Exon.modules.sql import SESSION
 
 
 
