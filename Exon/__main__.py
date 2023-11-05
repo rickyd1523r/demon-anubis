@@ -703,7 +703,6 @@ def migrate_chats(update: Update, context: CallbackContext):
 
     log.info("sᴜᴄᴄᴇssғᴜʟʟʏ ᴍɪɢʀᴀᴛᴇᴅ!")
     raise DispatcherHandlerStop
-.
 
     if WEBHOOK:
         log.info("ᴜsɪɴɢ ᴡᴇʙʜᴏᴏᴋs.")
