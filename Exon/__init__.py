@@ -151,17 +151,6 @@ if ENV:
     OWNER_WELCOME_MEDIA = os.environ.get("OWNER_WELCOME_MEDIA", None)
     EVENT_LOGS = os.environ.get("EVENT_LOGS", None) 
 
-   try:
-        WHITELIST_CHATS = {int(x) for x in os.environ.get('WHITELIST_CHATS', "").split()}
-    except ValueError:
-        raise Exception(
-            "Your blacklisted chats list does not contain valid integers.")
-
-    try:
-        BLACKLIST_CHATS = {int(x) for x in os.environ.get('BLACKLIST_CHATS', "").split()}
-    except ValueError:
-        raise Exception(
-            "Your blacklisted chats list does not contain valid integers.")
 
 else:
     from Shikimori.config import Development as Config
