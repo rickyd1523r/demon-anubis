@@ -230,23 +230,6 @@ else:
     INLINE_IMG = Config.INLINE_IMG
     OWNER_WELCOME_MEDIA = Config.OWNER_WELCOME_MEDIA
 
-   try:
-        WHITELIST_CHATS = {int(x) for x in os.environ.get('WHITELIST_CHATS', "").split()}
-    except ValueError:
-        raise Exception(
-            "Your blacklisted chats list does not contain valid integers.")
-
-    try:
-        BLACKLIST_CHATS = {int(x) for x in os.environ.get('BLACKLIST_CHATS', "").split()}
-    except ValueError:
-        raise Exception(
-            "Your blacklisted chats list does not contain valid integers.")
-
-DRAGONS.add(OWNER_ID)
-DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(5700727404)
-SUDOERS = filters.user()
-
 
 REDIS = StrictRedis.from_url(REDIS_URL, decode_responses=True)
 try:
