@@ -50,16 +50,6 @@ logging.getLogger("ptbcontrib.postgres_persistence.postgrespersistence").setLeve
 LOGGER = logging.getLogger("[ᴇxᴏɴ]")
 LOGGER.info("ᴇxᴏɴ ɪs sᴛᴀʀᴛɪɴɢ. | ᴀɴ ᴀʙɪsʜɴᴏɪᴍғ ᴘʀᴏᴊᴇᴄᴛ ᴘᴀʀᴛs. | ʟɪᴄᴇɴsᴇᴅ ᴜɴᴅᴇʀ ɢᴘʟᴠ3.")
 
-try:
-    if environ.get("ENV"):
-        from config import Config
-    else:
-        from config import Development as Config
-except Exception as ef:
-    LOGGER.error(ef)  # Print Error
-    LOGGER.error(format_exc())
-    sysexit(1)
-
 
 # if version < 3.6, stop bot.
 if sys.version_info[0] < 3 or sys.version_info[1] < 6:
