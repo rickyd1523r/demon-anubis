@@ -710,27 +710,44 @@ alive_id = ALIVE_ID[-1]
 def main():
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendAnimation(
+            if alive_id in ("jpeg", "jpg", "png"):
+                msg = dispatcher.bot.send_photo(
                 f"@{SUPPORT_CHAT}",
-                animation="https://telegra.ph/file/8dea393ddf4fc2e339179.gif",
-                caption=f"""
-ㅤ🥀 {dispatcher.bot.first_name} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ ✨ .....
-
-━━━━━━━━━━━━━
-⍟ ᴍʏ [ᴏᴡɴᴇʀ](https://t.me/{OWNER_USERNAME})
-⍟ **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{lver}`
-⍟ **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{tver}`
-⍟ **ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{pver}`
-⍟ **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{version_info[0]}.{version_info[1]}.{version_info[2]}`
-⍟ **ʙᴏᴛ ᴠᴇʀsɪᴏɴ :** `2.69``
-━━━━━━━━━━━━━
-""",
-                parse_mode=ParseMode.MARKDOWN,
-            )
+                photo=ALIVE_MEDIA,
+                caption="👋 Hi, i'm alive.",
+                parse_mode=ParseMode.MARKDOWN
+                )
+            elif alive_id in ("mp4", "mkv"):
+                msg = dispatcher.bot.send_video(
+                f"@{SUPPORT_CHAT}",
+                ALIVE_MEDIA,
+                caption="👋 Hi, i'm alive.",
+                parse_mode=ParseMode.MARKDOWN
+                )
+            elif alive_id in ("gif", "webp"):
+                msg = dispatcher.bot.send_animation(
+                f"@{SUPPORT_CHAT}",
+                ALIVE_MEDIA,
+                caption="👋 Hi, i'm alive.",
+                parse_mode=ParseMode.MARKDOWN
+                )
+            else:
+                msg = dispatcher.bot.send_text(
+                f"@{SUPPORT_CHAT}",
+                "👋 Hi, i'm alive.",
+                parse_mode=ParseMode.MARKDOWN
+                )
+            time.sleep(15)
+            try:
+                msg.delete()
+            except BadRequest:
+                pass
         except Unauthorized:
-            log.warning("ʙᴏᴛ ɪsɴᴛ ᴀʙʟᴇ ᴛᴏ sᴇɴᴅ ᴍᴇssᴀɢᴇ ᴛᴏ sᴜᴘᴘᴏʀᴛ_ᴄʜᴀᴛ, ɢᴏ ᴀɴᴅ ᴄʜᴇᴄᴋ !")
+            LOGGER.warning(
+                "Bot isnt able to send message to support_chat, go and check!"
+            )
         except BadRequest as e:
-            log.warning(e.message)
+            LOGGER.warning(e.message)
 
     if WEBHOOK:
         log.info("ᴜsɪɴɢ ᴡᴇʙʜᴏᴏᴋs.")
