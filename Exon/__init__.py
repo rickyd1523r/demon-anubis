@@ -89,6 +89,7 @@ MONGO_PORT = "27017"  # DON'T EDIT
 MONGO_URI = Config.MONGO_URI
 BOT_API_URL = "https://api.telegram.org/bot"  # DON'T EDIT
 DB_URL = Config.DATABASE_URL
+AI_API_KEY = os.environ.get("AI_API_KEY", None)
 INFOPIC = False
 DEBUG = False
 EVENT_LOGS = Config.LOG_GROUP_ID
