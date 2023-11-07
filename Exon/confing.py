@@ -5,7 +5,7 @@ STATUS: Code is working. ✅
 """
 BSD 2-Clause License
 
-Copyright (C) 2022, SOME-1HING [https://github.com/SOME-1HING]
+Copyright (C) 2022, Kakashi [https://github.com/YeahOffline]
 
 Credits:-
     I don't know who originally wrote this code. If you originally wrote this code, please reach out to me. 
@@ -40,7 +40,7 @@ import sys
 import yaml
 from envparse import env
 
-from Shikimori.utils.logger import log
+from Exon.utils.logger import log
 
 DEFAULTS = {
     "LOAD_MODULES": True,
