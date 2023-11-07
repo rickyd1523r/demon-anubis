@@ -126,8 +126,8 @@ async def photo(client: Abishnoi, message: Message):
                 return
 
 
-@pbot.on_callback_query()
-async def cb_handler(client: pbot, query: CallbackQuery):
+@Abishnoi.on_callback_query()
+async def cb_handler(client: Abishnoi, query: CallbackQuery):
     user_id = query.from_user.id
     if lel == user_id:
         if query.data == "removebg":
