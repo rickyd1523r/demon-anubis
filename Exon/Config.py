@@ -66,7 +66,7 @@ class Config(object):
     HEROKU_APP_NAME = (
         "awoo"  # Enter the Heroku app name here (Must an exact same name with your input above)
     )
-    ARQ_API = "awoo"
+    ARQ_API = "HDEBTP-URNMLY-BUQXRQ-RRSUPF-ARQ"
     APOD_API_KEY = "awoo"
     REDIS_URL = "redis://default:gAmIgMpbGoAelICLnJFMHlbMphnFgpb3@roundhouse.proxy.rlwy.net:30862"
     ANIME_NAME = "High School DxD"
