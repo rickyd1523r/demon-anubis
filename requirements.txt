@@ -61,3 +61,4 @@ pretty_errors
 nekos.py
 flask
 envparse
+loguru
