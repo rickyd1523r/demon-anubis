@@ -103,14 +103,14 @@ def kukiadd(update: Update, context: CallbackContext) -> str:
 def kuki(update: Update, context: CallbackContext):
     user = update.effective_user
     message = update.effective_message
-    msg = "Choose an option"
+    msg = "Wanted to Chat With Rose Oriana Baby."
     keyboard = InlineKeyboardMarkup([[
         InlineKeyboardButton(
-            text="Enable",
+            text="No",
             callback_data="add_chat({})")],
        [
         InlineKeyboardButton(
-            text="Disable",
+            text="Yes",
             callback_data="rm_chat({})")]])
     message.reply_text(
         msg,
@@ -142,7 +142,7 @@ def chatbot(update: Update, context: CallbackContext):
             return
         Exon = message.text
         bot.send_chat_action(chat_id, action="typing")
-        url = f"https://merissachatbot.tk/api/apikey=5700727404-MERISSAul3rht5mU1/Akeno/Kakashi/message={Exon}"
+        url = f"https://merissachatbot.tk/api/apikey=6495264484-MERISSAsf6SDr9rH2/Rose/GojoxYonko/message={Exon}"
         request = requests.get(url)
         results = json.loads(request.text)
         result = results["reply"]
