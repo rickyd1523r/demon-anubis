@@ -60,7 +60,7 @@ from Exon import Abishnoi
 
 lel = 00000000
 # pylint:disable=import-error
-@pbot.on_message(filters.command(["edit", "editor"]))
+@Abishnoi.on_message(filters.command(["edit", "editor"]))
 async def photo(client: pbot, message: Message):
     try:
         if not message.reply_to_message.photo:
