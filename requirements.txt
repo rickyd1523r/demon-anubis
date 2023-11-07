@@ -62,3 +62,6 @@ nekos.py
 flask
 envparse
 loguru
+yt_dlp
+youtube_dl
+youtube_search_python
