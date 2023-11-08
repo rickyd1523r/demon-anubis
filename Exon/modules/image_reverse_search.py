@@ -89,7 +89,7 @@ def reverse(update, context):
             return
     else:
         msg.reply_markdown(
-            "Please reply to a sticker, or an image to search it!\nDo you know that you can search an image with a "
+            "ᴀʙᴇ ᴋᴏɪ  ɪᴍᴀɢᴇ ʏᴀ sᴛɪᴄᴋᴇʀ ᴘᴇ ʀᴇᴘʟʏ ᴅᴇ ɴᴀ ᴄʜᴜᴛɪʏᴀ ʜᴀɪ ᴋʏᴀ!!\nDo you know that you can search an image with a "
             "link too? `/reverse [picturelink] <amount>`. "
         )
         return
