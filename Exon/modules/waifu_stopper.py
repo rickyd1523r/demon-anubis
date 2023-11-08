@@ -132,7 +132,7 @@ def reverse(update, context):
                 disable_web_page_preview=True,
             )
         else:
-            xx.edit_text("ᴘᴅʜᴀɪ ʟɪᴋʜᴀɪ ᴋʀᴏ ɪᴀs ᴡᴀɪs ʙᴀɴᴏ ᴅᴇsʜ ᴋᴏ sᴀᴍʙʜᴀʟᴏ...😠 ʏᴀʜᴀ ᴡᴀɪғᴜ ᴘᴀᴋᴀᴅɴᴇ sᴇ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟɴᴇ ᴡᴀʟᴀ😒 #ɴᴏᴡᴀɪғᴜ 🤐👍)
+            xx.edit_text("ᴘᴅʜᴀɪ ʟɪᴋʜᴀɪ ᴋʀᴏ ɪᴀs ᴡᴀɪs ʙᴀɴᴏ ᴅᴇsʜ ᴋᴏ sᴀᴍʙʜᴀʟᴏ...😠 ʏᴀʜᴀ ᴡᴀɪғᴜ ᴘᴀᴋᴀᴅɴᴇ sᴇ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟɴᴇ ᴡᴀʟᴀ😒 #ɴᴏᴡᴀɪғᴜ 🤐👍")
             return
 
         images = scam(imgspage, lim)
