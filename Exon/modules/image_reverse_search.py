@@ -10,9 +10,9 @@ import requests
 from bs4 import BeautifulSoup
 from telegram import InputMediaPhoto, TelegramError
 
-from Shikimori import dispatcher
-from Shikimori.modules.disable import DisableAbleCommandHandler
-from Shikimori.modules.helper_funcs.alternate import typing_action
+from Exon import dispatcher
+from Exon.modules.disable import DisableAbleCommandHandler
+from Exon.modules.helper_funcs.alternate import typing_action
 
 opener = urllib.request.build_opener()
 useragent = (
