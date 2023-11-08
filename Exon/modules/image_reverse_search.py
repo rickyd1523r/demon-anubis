@@ -131,7 +131,7 @@ def reverse(update, context):
                 disable_web_page_preview=True,
             )
         else:
-            xx.edit_text("ʙᴄ ᴘᴅʜᴀɪ ʟɪᴋʜᴀɪ ᴋʀᴏ, ʏᴀʜᴀ ᴡᴀɪғᴜ ᴘᴀᴋᴀᴅɴᴇ sᴇ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴇɢᴀ ~ [Kakashi](https://t.me/YeahOffline) 🙄😕")
+            xx.edit_text("ʙᴄ ᴘᴅʜᴀɪ ʟɪᴋʜᴀɪ ᴋʀᴏ, ʏᴀʜᴀ ᴡᴀɪғᴜ ᴘᴀᴋᴀᴅɴᴇ sᴇ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴇɢᴀ ~ @YeahKakashi 🙄😕")
             return
 
         images = scam(imgspage, lim)
