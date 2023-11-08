@@ -1,4 +1,4 @@
-
+mo
 import os
 import re
 import urllib
@@ -132,7 +132,7 @@ def reverse(update, context):
                 disable_web_page_preview=True,
             )
         else:
-            xx.edit_text("Bc pdai likhai karo😒 IAS Wais bano, yaha waifu pakdne se kuchh nahi milega, asli waifu ke liye kam krna ldta h🙄😕")
+            xx.edit_text("ʙᴄ ᴘᴅʜᴀɪ ʟɪᴋʜᴀɪ ᴋʀᴏ, ʏᴀʜᴀ ᴡᴀɪғᴜ ᴘᴀᴋᴀᴅɴᴇ sᴇ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴇɢᴀ ~ [Kakashi](https://t.me/YeahOffline) 🙄😕")
             return
 
         images = scam(imgspage, lim)
