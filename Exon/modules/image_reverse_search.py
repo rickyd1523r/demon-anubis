@@ -132,7 +132,7 @@ def reverse(update, context):
                 disable_web_page_preview=True,
             )
         else:
-            xx.edit_text("Nahi mila😞")
+            xx.edit_text("Bc pdai likhai karo😒 IAS Wais bano, yaha waifu pakdne se kuchh nahi milega, asli waifu ke liye kam krna ldta h🙄😕")
             return
 
         images = scam(imgspage, lim)
@@ -212,7 +212,7 @@ def scam(imgspage, lim):
 
 
 REVERSE_HANDLER = DisableAbleCommandHandler(
-    ["google", "reverse", "grs", "p", "pp", "name"],
+    ["google", "reverse", "grs", "p", "pp", "name", sauce],
     reverse,
     pass_args=True,
     run_async=True,
