@@ -45,7 +45,8 @@ def reverse(update, context):
         elif reply.document:
             file_id = reply.document.file_id
         else:
-            msg.reply_text("Atleast reply to a image or sticker you MF!!! Chutiya ho kya?")
+            msg.reply_text("ᴘᴅʜᴀɪ ʟɪᴋʜᴀɪ ᴋʀᴏ ɪᴀs ᴡᴀɪs ʙᴀɴᴏ ᴅᴇsʜ ᴋᴏ sᴀᴍʙʜᴀʟᴏ...😠 ʏᴀʜᴀ ᴡᴀɪғᴜ ᴘᴀᴋᴀᴅɴᴇ sᴇ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟɴᴇ ᴡᴀʟᴀ😒 #ɴᴏᴡᴀɪғᴜ 🤐👍
+            ")
             return
         image_file = context.bot.get_file(file_id)
         image_file.download(imagename)
