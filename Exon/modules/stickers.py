@@ -577,7 +577,7 @@ def delsticker(update, context):
 Credit = "This Plugin Made by Kakashi (@YeahOffline), if you're using this code in your bot. there is no issue but don't remove this line"
 
 
-@asux(pattern="^/mmf ?(.*)")", about={
+@asux(pattern="^/mmf ?(.*)"), about={
     'header': "Memify aka Geyify (๑¯ω¯๑)",
     'description': "Write text on any gif/sticker/image. "
                    "Top and bottom text are separated by ; \n Naw gu Awey",
