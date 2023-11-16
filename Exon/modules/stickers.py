@@ -577,7 +577,7 @@ def delsticker(update, context):
 Credit = "This Plugin Made by Kakashi (@YeahOffline), if you're using this code in your bot. there is no issue but don't remove this line"
 
 
-@asux(pattern="^/mmf ?(.*)")
+@Cutiepii(pattern="^/mmf ?(.*)")
 async def memify(message: Message):
     replied = message.reply_to_message
     if not replied:
