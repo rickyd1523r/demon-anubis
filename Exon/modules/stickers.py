@@ -576,7 +576,7 @@ def delsticker(update, context):
 Credit = "Abishnoi69"
 
 
-@asux(pattern="^/mmf ?(.*)")
+@Cutiepii(pattern="^/mmf ?(.*)")
 async def handler(event):
     if event.fwd_from:
         return
