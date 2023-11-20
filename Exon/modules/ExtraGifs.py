@@ -147,14 +147,14 @@ def pat(update: Update, context: CallbackContext):
             temp = random.choice(ExtraGifs_strings.PAT_GIFS)
             reply_to.reply_animation(temp)
         except BadRequest:
-            pat_type = "Text"
+            pat_type = "Gif"
 
     if pat_type == "Sticker":
         try:
             temp = random.choice(ExtraGifs_strings.PAT_STICKERS)
             reply_to.reply_sticker(temp)
         except BadRequest:
-            pat_type = "Text"
+            pat_type = "Gif"
 
     if pat_type == "Text":
         temp = random.choice(ExtraGifs_strings.PAT_TEMPLATES)
