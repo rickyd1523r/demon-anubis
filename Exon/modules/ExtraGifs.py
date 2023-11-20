@@ -141,22 +141,22 @@ def pat(update: Update, context: CallbackContext):
         user1 = bot.first_name
         user2 = curr_user
 
-    pat_type = random.choice(("Gif", "Sticker"))
+    pat_type = random.choice(("Text", "Gif", "Sticker"))
     if pat_type == "Gif":
         try:
             temp = random.choice(ExtraGifs_strings.PAT_GIFS)
             reply_to.reply_animation(temp)
         except BadRequest:
-            pat_type = "Gif"
+            pat_type = "Text"
 
     if pat_type == "Sticker":
         try:
             temp = random.choice(ExtraGifs_strings.PAT_STICKERS)
             reply_to.reply_sticker(temp)
         except BadRequest:
-            pat_type = "Gif"
+            pat_type = "Text"
 
-    if pat_type == "Gif":
+    if pat_type == "Text":
         temp = random.choice(ExtraGifs_strings.PAT_TEMPLATES)
         reply = temp.format(user1=user1, user2=user2)
         reply_to.reply_text(reply, parse_mode=ParseMode.HTML)
