@@ -40,7 +40,7 @@ from telegram import Update
 from telegram.ext import CallbackContext
 
 from Exon import dispatcher
-from Exonm.modules.disable import DisableAbleCommandHandler
+from Exon.modules.disable import DisableAbleCommandHandler
 
 # sleep how many times after each edit in 'love'
 EDIT_SLEEP = 1
