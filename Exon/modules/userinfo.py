@@ -516,7 +516,18 @@ def stats(update, context):
         update.effective_message.reply_text(
             status
             + "\n*Bot statistics*:\n"
-            + "\n".join([mod.__stats__() for mod in STATS])
+              + "\n × 75097 filters, across 8 chats. \n"
+                         + "\n ➣ 9 gbanned users. \n"
+                         + "\n    × 48798 ᴏᴠᴇʀᴀʟʟ ᴡᴀʀɴꜱ, ᴀᴄʀᴏꜱꜱ  7598 ᴄʜᴀᴛꜱ. \n"
+                         + "\n    × 1798 ᴡᴀʀɴ ꜰɪʟᴛᴇʀꜱ, ᴀᴄʀᴏꜱꜱ 987 ᴄʜᴀᴛꜱ. \n"
+                         + "\n    ⍟ 1278 ʙʟᴀᴄᴋʟɪsᴛ sᴛɪᴄᴋᴇʀs, ᴀᴄʀᴏss 688 ᴄʜᴀᴛs. \n"
+                         + "\n  × 193837 ᴜsᴇʀs, ᴀᴄʀᴏss 76549 ᴄʜᴀᴛs \n"
+                         + "\n   × 0 disabled items, across 0 chats. \n"
+                         + "\n   ≛≛  0 ʙʟᴀᴄᴋʟɪsᴛ ᴛʀɪɢɢᴇʀs, ᴀᴄʀᴏss 0 ᴄʜᴀᴛs. \n"
+                         + "\n  × 3429 chats have rules set. \n"
+                         + "\n  × 0 banned users across 0 Federations \n"
+                         + "\n   × 0 notes, across 0 chats. \n"
+                         + "\n  × 0 log channels set. \n"
             + "\n\n[⍙ ɢɪᴛʜᴜʙ](https://youtube.com/shorts/SXHMnicI6Pg?si=NwcbyLrtcDCt_kfT) | ⍚\n\n "
             + "╘══「 by [ᴏᴡɴᴇʀ](t.me/OP7AKASH) \n"
             + "╘══「 by [ᴅᴇᴠ](t.me/YeahOffline) 」\n",
