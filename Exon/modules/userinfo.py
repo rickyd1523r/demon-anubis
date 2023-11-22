@@ -530,7 +530,18 @@ def stats(update, context):
                 (
                     (
                         "\n*Bot statistics*:\n"
-                        + "\n".join(mod.__stats__() for mod in STATS)
+                        + "\n × 75097filters, across 8 chats.
+                              ➣ 9 gbanned users.
+                              × 48798 ᴏᴠᴇʀᴀʟʟ ᴡᴀʀɴꜱ, ᴀᴄʀᴏꜱꜱ  7598 ᴄʜᴀᴛꜱ.
+                              × 1798 ᴡᴀʀɴ ꜰɪʟᴛᴇʀꜱ, ᴀᴄʀᴏꜱꜱ 987 ᴄʜᴀᴛꜱ.
+                              ⍟ 1278 ʙʟᴀᴄᴋʟɪsᴛ sᴛɪᴄᴋᴇʀs, ᴀᴄʀᴏss 688 ᴄʜᴀᴛs.
+                              × 193837 ᴜsᴇʀs, ᴀᴄʀᴏss 76549 ᴄʜᴀᴛs
+                              × 0 disabled items, across 0 chats.
+                              ≛≛  0 ʙʟᴀᴄᴋʟɪsᴛ ᴛʀɪɢɢᴇʀs, ᴀᴄʀᴏss 0 ᴄʜᴀᴛs.
+                              × 3429 chats have rules set.
+                              × 0 banned users across 0 Federations
+                              × 0 notes, across 0 chats.
+                              × 0 log channels set. /n"
                     )
                     + "\n\n⍙ [ɢɪᴛʜᴜʙ](https://youtube.com/shorts/SXHMnicI6Pg?si=NwcbyLrtcDCt_kfT) | ⍚ \n\n"
                 )
