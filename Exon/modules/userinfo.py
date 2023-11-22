@@ -529,8 +529,8 @@ def stats(update, context):
             (
                 (
                     (
-                        "\n*Bot statistics*:
-                              × 75097filters, across 8 chats.
+                        "\n*Bot statistics*: \n"
+                          "\n × 75097 filters, across 8 chats.
                               ➣ 9 gbanned users.
                               × 48798 ᴏᴠᴇʀᴀʟʟ ᴡᴀʀɴꜱ, ᴀᴄʀᴏꜱꜱ  7598 ᴄʜᴀᴛꜱ.
                               × 1798 ᴡᴀʀɴ ꜰɪʟᴛᴇʀꜱ, ᴀᴄʀᴏꜱꜱ 987 ᴄʜᴀᴛꜱ.
